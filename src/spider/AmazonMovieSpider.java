@@ -22,7 +22,7 @@ import us.codecraft.webmagic.selector.Selectable;
 
 public class AmazonMovieSpider implements PageProcessor {
     public static int count=0;
-    private Site site = Site.me().setRetryTimes(3).setSleepTime(753)
+    private Site site = Site.me().setRetryTimes(3).setSleepTime(253)
             .setUserAgent(UserAgents.getuseragent())
             ;
     public AmazonMovieSpider()
@@ -32,7 +32,7 @@ public class AmazonMovieSpider implements PageProcessor {
     @Override
     public void process(Page page) {
         try {
-            Thread.sleep(new Random().nextInt(553)+2553);
+            Thread.sleep(new Random().nextInt(253)+253);
         }catch(Exception e)
         {
             e.printStackTrace();

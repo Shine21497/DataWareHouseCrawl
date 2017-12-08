@@ -168,7 +168,7 @@ public String getIdByName(String name,  String IdName){
 		try
 		{
 			Connection conn = JDBC.getConnection();
-			String sql="DELETE from proxys";
+			String sql="DELETE from "+PathHelper.getdatabasename();
 			PreparedStatement pstmt=conn.prepareStatement(sql);
 			return  super.longHaul(pstmt,conn);
 		}

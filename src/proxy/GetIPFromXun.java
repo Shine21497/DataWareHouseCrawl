@@ -17,7 +17,7 @@ public class GetIPFromXun {
     public static void main(String[] args) {
         try {
             Request request = new Request.Builder()
-                    .url("http://api.xdaili.cn/xdaili-api/greatRecharge/getGreatIp?spiderId=2442699d86ac4d13bd2bdb6bb3ed8f1e&orderno=YZ20171283571icdLW8&returnType=2&count=1")
+                    .url("http://api.xdaili.cn/xdaili-api/greatRecharge/getGreatIp?spiderId=2442699d86ac4d13bd2bdb6bb3ed8f1e&orderno=YZ20171283571icdLW8&returnType=2&count=20")
                     .build();
 
             Response response = client.newCall(request).execute();
